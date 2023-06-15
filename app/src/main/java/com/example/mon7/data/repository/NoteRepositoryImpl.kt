@@ -50,7 +50,7 @@ class NoteRepositoryImpl @Inject constructor(
     override fun deleteNote(note: Note)= flow{
         emit(Resource.Loading())
         try {
-            val data =  noteDao.createNote(note.toEntity())
+            val data =  noteDao.deleteNote(note.toEntity())
             emit(Resource.Success(data))
         } catch (e: Exception) {
             emit(Resource.Error(e.localizedMessage ?: "unknown error"))
