@@ -1,4 +1,4 @@
-package com.example.mon7.presentation
+package com.example.mon7.presentation.fragments.list_note
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -6,6 +6,7 @@ import com.example.mon7.domain.model.Note
 import com.example.mon7.domain.usecase.DeleteNoteUseCase
 import com.example.mon7.domain.usecase.GetAllNotesUseCase
 import com.example.mon7.domain.utils.Resource
+import com.example.mon7.presentation.utils.UIState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

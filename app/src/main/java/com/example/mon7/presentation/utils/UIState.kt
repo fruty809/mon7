@@ -1,4 +1,4 @@
-package com.example.mon7.presentation
+package com.example.mon7.presentation.utils
 
 sealed class UIState<T> {
     class Loading<T> : UIState<T>()

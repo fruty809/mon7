@@ -6,6 +6,7 @@ import com.example.mon7.domain.model.Note
 import com.example.mon7.domain.usecase.CreateNoteUseCase
 import com.example.mon7.domain.usecase.UpdateNoteUseCase
 import com.example.mon7.domain.utils.Resource
+import com.example.mon7.presentation.utils.UIState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch

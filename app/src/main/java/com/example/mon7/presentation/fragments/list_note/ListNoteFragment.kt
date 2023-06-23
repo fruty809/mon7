@@ -1,4 +1,4 @@
-package com.example.mon7.presentation
+package com.example.mon7.presentation.fragments.list_note
 
 import android.os.Bundle
 import android.view.LayoutInflater

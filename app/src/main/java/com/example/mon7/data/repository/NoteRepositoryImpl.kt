@@ -10,7 +10,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import javax.inject.Inject
-
 class NoteRepositoryImpl @Inject constructor(
     private val noteDao: NoteDao
 ) : NoteRepository {
@@ -28,6 +27,7 @@ class NoteRepositoryImpl @Inject constructor(
 
     override fun createNote(note: Note) = flow{
         emit(Resource.Loading())
+        kotlinx.coroutines.delay(2000)
         try {
             val data =  noteDao.createNote(note.toEntity())
             emit(Resource.Success(data))
